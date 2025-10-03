@@ -1,0 +1,64 @@
+{
+  "name": "LuminaAI v2.0",
+  "version": "2.0.0",
+  "description": "Advanced AI System built with treaai framework",
+  "author": "treaai",
+  "license": "MIT",
+  
+  "core": {
+    "engine": "LuminaAICore",
+    "optimization": "balanced",
+    "safety_level": "high"
+  },
+  
+  "models": {
+    "default": {
+      "type": "language",
+      "max_tokens": 4096,
+      "temperature": 0.7,
+      "top_p": 0.9,
+      "top_k": 50
+    },
+    "code": {
+      "type": "code",
+      "max_tokens": 8192,
+      "temperature": 0.5,
+      "focus": "accuracy"
+    },
+    "reasoning": {
+      "type": "reasoning",
+      "max_tokens": 16384,
+      "temperature": 0.3,
+      "focus": "logic"
+    }
+  },
+  
+  "features": {
+    "streaming": true,
+    "caching": true,
+    "batch_processing": true,
+    "safety_filters": true,
+    "multi_modal": true,
+    "conversation_memory": true
+  },
+  
+  "performance": {
+    "cache_size": 1000,
+    "max_concurrent_requests": 10,
+    "timeout_seconds": 30,
+    "retry_attempts": 3
+  },
+  
+  "safety": {
+    "content_filtering": true,
+    "toxicity_detection": true,
+    "bias_mitigation": true,
+    "privacy_protection": true
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "format": "json",
+    "output": "stdout"
+  }
+}
